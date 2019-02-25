@@ -14,5 +14,6 @@ public class ActividadDosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_actividad_dos);
         this.ivImageOne=findViewById(R.id.ivImageOne);
         this.ivImageOne.setImageDrawable(getDrawable(R.drawable.pikachu));
+
     }
 }
