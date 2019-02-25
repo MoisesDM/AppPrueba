@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calculadora </string>
+    <string name="hintNumeroOne">Numero 1</string>
+    <string name="hintNumeroTwo">Numero 2</string>
+    <string name="btnSumar">Calcular Suma</string>
+    <string name="tvResultador">Resultado</string>
+    <string name="btnMusica">musica</string>
+    <string name="BtnRunActivity">Actividad dos</string>
+</resources>
