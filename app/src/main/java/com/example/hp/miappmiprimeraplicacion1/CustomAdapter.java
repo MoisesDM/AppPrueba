@@ -63,9 +63,9 @@ private Context context;
             public void onClick(View v) {
                 Toast.makeText(context, "seleccion de "+contacto.getNombre()
                                 , Toast.LENGTH_SHORT).show();
-            }
-        });
 
+        }
+});
 
 
     }
