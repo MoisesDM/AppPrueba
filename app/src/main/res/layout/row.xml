@@ -5,6 +5,7 @@
     android:layout_height="100dp">
 
     <android.support.v7.widget.CardView
+        android:id="@+id/Contendor"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginLeft="5dp"
@@ -33,6 +34,7 @@
                     android:id="@+id/tvnombre"
                     android:layout_width="242dp"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/bilbo_swash_caps"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
                     android:textSize="24sp" />
