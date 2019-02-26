@@ -8,11 +8,12 @@
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvContactos"
-        android:layout_width="280dp"
-        android:layout_height="492dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="367dp"
+        android:layout_height="511dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.09"

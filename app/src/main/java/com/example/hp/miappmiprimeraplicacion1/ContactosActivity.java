@@ -16,11 +16,13 @@ public class ContactosActivity extends AppCompatActivity {
     public ContactosActivity() {
        this.contactos = new ArrayList<>(
                 Arrays.asList(
-                        new Contacto("pepe", "5555555", "999999"),
-                        new Contacto("Gabriel", "552345555", "9999239"),
-                        new Contacto("Karlos ", "77345617", "99013424"),
-                        new Contacto("feregrino ", "17236871", "95532771409"),
-                        new Contacto("Bonifacio", "592836291", "2782552")
+                        new Contacto("Pulido", "5555555", "999999",R.drawable.pulido),
+                        new Contacto("Mier", "552345555", "9999239",R.drawable.mier),
+                        new Contacto("Gudiño", "77345617", "99013424",R.drawable.gudino),
+                        new Contacto("Brizuela", "17236871", "95532771409",R.drawable.conejo),
+                        new Contacto("Carlos", "17236871", "95532771409",R.drawable.carlos),
+                        new Contacto("Javier ", "17236871", "95532771409",R.drawable.chifis)
+
                 ));
     }
 

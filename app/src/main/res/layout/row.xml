@@ -2,11 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="75dp">
+    android:layout_height="100dp">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -14,11 +17,11 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="266dp"
+                android:id="@+id/ivContacto"
+                android:layout_width="315dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+                app:srcCompat="@drawable/mier" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -27,21 +30,26 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tvnombre"
+                    android:layout_width="242dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="24sp" />
+
+                <TextView
                     android:id="@+id/tvnumeroprincipal"
                     android:layout_width="242dp"
                     android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
                     android:textColor="@android:color/holo_blue_dark" />
 
                 <TextView
                     android:id="@+id/tvnumeromovil"
                     android:layout_width="242dp"
                     android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
                     android:textColor="@android:color/holo_green_light" />
-
-                <TextView
-                    android:id="@+id/tvnombre"
-                    android:layout_width="242dp"
-                    android:layout_height="wrap_content" />
 
                 <Space
                     android:layout_width="242dp"

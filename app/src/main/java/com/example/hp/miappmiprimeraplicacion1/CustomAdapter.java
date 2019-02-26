@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.hp.entidades.Contacto;
@@ -39,6 +40,7 @@ private Context context;
         myViewHolder.tvNombre.setText(contacto.getNombre());
         myViewHolder.tvNumeroMovil.setText(contacto.getNueroMovil());
         myViewHolder.tvnumeroPrincipal.setText(contacto.getNumeorprincipal());
+        myViewHolder.imagContacto.setImageResource(contacto.getImgContacto());
      // aqui se puede agregar eventos al componente listaview
 
     }
@@ -51,11 +53,13 @@ private Context context;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         private TextView tvNombre,tvNumeroMovil,tvnumeroPrincipal;
+        ImageView imagContacto;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             this.tvNombre=itemView.findViewById(R.id.tvnombre);
             this.tvNumeroMovil=itemView.findViewById(R.id.tvnumeromovil);
             this.tvnumeroPrincipal=itemView.findViewById(R.id.tvnumeroprincipal);
+            imagContacto=itemView.findViewById(R.id.ivContacto);
         }
     }
 }
