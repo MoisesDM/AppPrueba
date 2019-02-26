@@ -3,7 +3,7 @@ package com.example.hp.calculadora;
 public class Suma {
     private double Numberone;
     private double numbertwo;
-//hola soy moy
+    //quite el tipo de letra al nombre
     public Suma() {
 
         this.Numberone=0.0;
