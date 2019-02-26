@@ -22,14 +22,6 @@ import java.util.ArrayList;
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder>  {
 private ArrayList<Contacto>contactos ;
 private Context context;
-
-
-
-
-
-
-
-
     public CustomAdapter(ArrayList<Contacto> contactos, Context context) {
         this.contactos = contactos;
         this.context = context;
@@ -45,7 +37,6 @@ private Context context;
         return new MyViewHolder(view);
 
     }
-
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
 
@@ -82,6 +73,7 @@ private Context context;
         private TextView tvNombre,tvNumeroMovil,tvnumeroPrincipal;
         ImageView imagContacto;
         CardView cont;
+
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             this.tvNombre=itemView.findViewById(R.id.tvnombre);
@@ -90,5 +82,6 @@ private Context context;
             this.imagContacto=itemView.findViewById(R.id.ivContacto);
         this.cont=itemView.findViewById(R.id.Contendor);
         }
+        }
     }
-}
+
