@@ -22,6 +22,7 @@ public class ContactosActivity extends AppCompatActivity {
         this.rvContacto=findViewById(R.id.rvContactos);
         this.rvContacto.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         this.rvContacto.setAdapter(new CustomAdapter(this.contactos,this));
+
     }
 
     public ContactosActivity() {

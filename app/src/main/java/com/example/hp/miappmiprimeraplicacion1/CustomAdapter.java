@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,6 +22,12 @@ import java.util.ArrayList;
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder>  {
 private ArrayList<Contacto>contactos ;
 private Context context;
+
+
+
+
+
+
 
 
     public CustomAdapter(ArrayList<Contacto> contactos, Context context) {
@@ -51,7 +58,13 @@ private Context context;
 
 
      // aqui se puede agregar eventos al componente listaview
-
+        myViewHolder.cont.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, "seleccion de "+contacto.getNombre()
+                                , Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
 
@@ -65,7 +78,6 @@ private Context context;
 
 
 
-
     public class MyViewHolder extends RecyclerView.ViewHolder {
         private TextView tvNombre,tvNumeroMovil,tvnumeroPrincipal;
         ImageView imagContacto;
@@ -75,8 +87,8 @@ private Context context;
             this.tvNombre=itemView.findViewById(R.id.tvnombre);
             this.tvNumeroMovil=itemView.findViewById(R.id.tvnumeromovil);
             this.tvnumeroPrincipal=itemView.findViewById(R.id.tvnumeroprincipal);
-            imagContacto=itemView.findViewById(R.id.ivContacto);
-        cont=itemView.findViewById(R.id.Contendor);
+            this.imagContacto=itemView.findViewById(R.id.ivContacto);
+        this.cont=itemView.findViewById(R.id.Contendor);
         }
     }
 }
