@@ -47,7 +47,7 @@ private Context context;
         myViewHolder.tvnumeroPrincipal.setText(contacto.getNumeorprincipal());
         myViewHolder.imagContacto.setImageResource(contacto.getImgContacto());
 
-
+myViewHolder.tvNombre.setTypeface(Typeface.createFromAsset(myViewHolder.itemView.getContext().getAssets(),"font/saiyan.ttf"));
      // aqui se puede agregar eventos al componente listaview
         myViewHolder.cont.setOnClickListener(new View.OnClickListener() {
             @Override
