@@ -82,16 +82,6 @@ MediaPlayer mp;
                }
            });
 
-
-
-
-
-
-
-
-
-
-
         this.btnContactos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -146,5 +136,8 @@ MediaPlayer mp;
         }
 
     }
+
+
+
 }
 

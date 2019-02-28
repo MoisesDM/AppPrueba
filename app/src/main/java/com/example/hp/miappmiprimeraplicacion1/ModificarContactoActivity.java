@@ -25,11 +25,16 @@ this.movil=findViewById(R.id.Movil);
 this.principal=findViewById(R.id.Principal);
 this.cancelar=findViewById(R.id.btncancelar);
 this.btnGuardar=findViewById(R.id.btnGuardar);
+
+
 Intent intent= getIntent();
+
+
 this.nombre.setText(intent.getExtras().getString("nombre"));
         this.movil.setText(intent.getExtras().getString("movil"));
         this.principal.setText(intent.getExtras().getString("principal"));
         this.imag.setImageResource(intent.getExtras().getInt("imagen"));
+
 
 this.btnGuardar.setOnClickListener(new View.OnClickListener() {
     @Override

@@ -8,4 +8,11 @@
     <string name="BtnRunActivity">Actividad dos</string>
     <string name="btn_Guardar">Guardar</string>
     <string name="btn_cancelar">Cancelar</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Moysexo</string>
+    <string name="nav_header_subtitle">mo99dm@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 </resources>
