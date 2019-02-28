@@ -61,6 +61,11 @@ private Context context=null;
                 Toast.makeText(context, "seleccion de "+contacto.getNombre()
                                 , Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent(v.getContext(),ModificarContactoActivity.class);
+                intent.putExtra("nombre",contacto.getNombre());
+                intent.putExtra("movil",contacto.getNueroMovil());
+                intent.putExtra( "principal", contacto.getNumeorprincipal());
+                intent.putExtra("imagen",contacto.getImgContacto());
+
                 context.startActivity(intent);
 
             }

@@ -6,4 +6,6 @@
     <string name="tvResultador">Resultado</string>
     <string name="btnMusica">musica</string>
     <string name="BtnRunActivity">Actividad dos</string>
+    <string name="btn_Guardar">Guardar</string>
+    <string name="btn_cancelar">Cancelar</string>
 </resources>
