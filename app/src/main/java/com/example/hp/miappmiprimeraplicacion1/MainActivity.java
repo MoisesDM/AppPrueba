@@ -102,6 +102,8 @@ MediaPlayer mp;
                 startActivity(intent);
             }
         });
+
+
                      this.btnActividaddos.setOnClickListener(new View.OnClickListener() {
                  @Override
                  public void onClick(View v) {
@@ -137,6 +139,7 @@ MediaPlayer mp;
         try {
             this.mp.prepare();
             this.mp.start();
+            btnMedia.setBackgroundResource(R.drawable.botonpausa);
         }catch (IOException e ) {
             e.printStackTrace();
             Log.e("Song",e.getMessage());

@@ -1,6 +1,7 @@
 package com.example.hp.miappmiprimeraplicacion1;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.nfc.Tag;
 import android.support.annotation.NonNull;
@@ -19,9 +20,11 @@ import com.example.hp.entidades.Contacto;
 
 import java.util.ArrayList;
 
+import static android.content.ContentValues.TAG;
+
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder>  {
 private ArrayList<Contacto>contactos ;
-private Context context;
+private Context context=null;
     public CustomAdapter(ArrayList<Contacto> contactos, Context context) {
         this.contactos = contactos;
         this.context = context;
@@ -39,7 +42,7 @@ private Context context;
     }
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
-
+        Log.d(TAG, "onBindViewHolder: called ");
         final  Contacto contacto=(Contacto) contactos.get(i);
         myViewHolder.tvNombre.setText(contacto.getNombre());
 
@@ -47,15 +50,21 @@ private Context context;
         myViewHolder.tvnumeroPrincipal.setText(contacto.getNumeorprincipal());
         myViewHolder.imagContacto.setImageResource(contacto.getImgContacto());
 
-myViewHolder.tvNombre.setTypeface(Typeface.createFromAsset(myViewHolder.itemView.getContext().getAssets(),"font/saiyan.ttf"));
+        myViewHolder.tvNombre.setTypeface(Typeface.createFromAsset(
+                myViewHolder.itemView.getContext().getAssets(),"font/saiyan.ttf"));
+
      // aqui se puede agregar eventos al componente listaview
+
         myViewHolder.cont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, "seleccion de "+contacto.getNombre()
                                 , Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(v.getContext(),ModificarContactoActivity.class);
+                context.startActivity(intent);
 
-        }
+            }
+
 });
 
 
