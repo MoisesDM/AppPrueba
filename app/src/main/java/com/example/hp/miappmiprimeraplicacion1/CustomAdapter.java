@@ -66,7 +66,7 @@ private Context context=null;
                 Intent intent=new Intent(v.getContext(),ModificarContactoActivity.class);
                 intent.putExtra("nombre",contacto.getNombre());
                 intent.putExtra("movil",contacto.getNueroMovil());
-                intent.putExtra("principal", contacto.getNumeorprincipal());
+                intent.putExtra( "principal", contacto.getNumeorprincipal());
                 intent.putExtra("imagen",contacto.getImgContacto());
 
                 context.startActivity(intent);
@@ -88,7 +88,7 @@ private Context context=null;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         private TextView tvNombre,tvNumeroMovil,tvnumeroPrincipal;
-        private ImageView imagContacto;
+        ImageView imagContacto;
         CardView cont;
 
         public MyViewHolder(@NonNull View itemView) {
