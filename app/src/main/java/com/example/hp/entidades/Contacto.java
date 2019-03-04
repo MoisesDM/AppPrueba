@@ -9,6 +9,12 @@ public class Contacto {
     public Contacto(){
 
     }
+
+    public Contacto(String nombre, int imgContacto) {
+        this.nombre = nombre;
+        ImgContacto = imgContacto;
+    }
+
     public Contacto(String nombre, String nueroMovil, String numeorprincipal, int imgContacto) {
         this.nombre = nombre;
         this.nueroMovil = nueroMovil;

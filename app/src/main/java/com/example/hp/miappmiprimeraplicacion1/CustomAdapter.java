@@ -99,6 +99,11 @@ private Context context=null;
             this.imagContacto=itemView.findViewById(R.id.ivContacto);
         this.cont=itemView.findViewById(R.id.Contendor);
         }
+
+
         }
+
+
+
 }
 

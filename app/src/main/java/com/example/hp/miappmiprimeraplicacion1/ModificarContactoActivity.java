@@ -23,6 +23,10 @@ public class ModificarContactoActivity extends AppCompatActivity {
     TextView nombre, movil, principal;
     ImageView imag;
     Button cancelar, btnGuardar;
+    private ArrayList<Contacto> mList;
+    private playersAdapter mAdapter;
+
+
     int img = ContactosActivity.contactos.get(position).getImgContacto();
 
     private ArrayList<String> contactos;
@@ -37,7 +41,25 @@ public class ModificarContactoActivity extends AppCompatActivity {
         setContentView(layout.activity_modificar_contacto);
 //------------------------------------------------------------------------------
 
+        initList();
+        Spinner spinnerCountries = findViewById(id.spinner_players);
 
+        mAdapter = new playersAdapter(this, mList);
+        spinnerCountries.setAdapter(mAdapter);
+
+        spinnerCountries.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Contacto clickedItem = (Contacto) parent.getItemAtPosition(position);
+                String clickedCountryName = clickedItem.getNombre();
+                Toast.makeText(ModificarContactoActivity.this, clickedCountryName + " selected", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
 //------------------------------------------------------------------------------
 
@@ -91,4 +113,14 @@ public class ModificarContactoActivity extends AppCompatActivity {
             }
         });
         }
-}
+
+    private void initList() {
+        mList = new ArrayList<>();
+        mList.add(new Contacto("Pulido", drawable.pulido));
+        mList.add(new Contacto("Mier", drawable.mier));
+        mList.add(new Contacto("Gudiño", drawable.gudino));
+        mList.add(new Contacto("Brizuela", drawable.conejo));
+        mList.add(new Contacto("Carlos", drawable.carlos));
+        mList.add(new Contacto("Javier", drawable.chifis));
+    }}
+
