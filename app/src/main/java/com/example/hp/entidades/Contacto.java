@@ -4,15 +4,11 @@ public class Contacto {
     private String nombre;
     private String nueroMovil;
     private String numeorprincipal;
-
-
-
     private int ImgContacto;
 
     public Contacto(){
 
     }
-
     public Contacto(String nombre, String nueroMovil, String numeorprincipal, int imgContacto) {
         this.nombre = nombre;
         this.nueroMovil = nueroMovil;

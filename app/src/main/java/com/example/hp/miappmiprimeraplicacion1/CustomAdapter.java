@@ -100,5 +100,5 @@ private Context context=null;
         this.cont=itemView.findViewById(R.id.Contendor);
         }
         }
-    }
+}
 
