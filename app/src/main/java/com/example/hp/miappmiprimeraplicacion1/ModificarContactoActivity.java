@@ -25,9 +25,7 @@ public class ModificarContactoActivity extends AppCompatActivity {
     Button cancelar, btnGuardar;
     private ArrayList<Contacto> mList;
     private playersAdapter mAdapter;
-
-
-    int img = ContactosActivity.contactos.get(position).getImgContacto();
+    int img ;
 
     private ArrayList<String> contactos;
 
@@ -52,6 +50,8 @@ public class ModificarContactoActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Contacto clickedItem = (Contacto) parent.getItemAtPosition(position);
                 String clickedCountryName = clickedItem.getNombre();
+                int imag=clickedItem.getImgContacto();
+                img=imag;
                 Toast.makeText(ModificarContactoActivity.this, clickedCountryName + " selected", Toast.LENGTH_SHORT).show();
             }
 
